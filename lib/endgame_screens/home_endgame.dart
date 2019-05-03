@@ -23,8 +23,8 @@ class ListInfinitySaga extends State<InfinitySaga>{
 
   Future<List<InfinityComic>> getComics() async{
     var now = new DateTime.now();
-    var md5D = generateMd5("${now}6a20d4f1cf1b8df6642bd8a623de1b0ec6dbfc7cf0a78b46af11eb7718d088831a2add17");
-    var url = "https://gateway.marvel.com/v1/public/series?title=infinity gauntlet&ts=${now}&apikey=f0a78b46af11eb7718d088831a2add17&hash=${md5D}";
+    var md5D = generateMd5("${now}APISKEYSHERE");
+    var url = "https://gateway.marvel.com/v1/public/series?title=infinity gauntlet&ts=${now}&apikey=APIKEYHERE&hash=${md5D}";
 
 
     var data = await http.get(url);
